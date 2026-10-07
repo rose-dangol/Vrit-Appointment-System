@@ -1,0 +1,20 @@
+[
+  {
+    "model": "backend.Service",
+    "pk": 1,
+    "fields": {
+      "name": "Hair Cut",
+      "price": 55,
+      "duration": "50"
+    }
+  },
+  {
+    "model": "backend.Service",
+    "pk": 2,
+    "fields": {
+      "name": "Hair Wash",
+      "price": 5,
+      "duration": "15"
+    }
+  }
+]

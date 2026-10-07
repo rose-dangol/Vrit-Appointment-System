@@ -1,0 +1,82 @@
+# ==========================================
+# Django Specific Files
+# ==========================================
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media files uploaded by users
+media/
+
+# Static files collected via 'python manage.py collectstatic'
+# Uncomment the line below if you run collectstatic in your build pipeline
+# staticfiles/
+
+# ==========================================
+# Environments and Secrets
+# ==========================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ==========================================
+# Python Distribution, Packaging, and Builds
+# ==========================================
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Testing and Code Coverage
+# ==========================================
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.mo
+.pytest_cache/
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# PyCharm / IntelliJ
+.idea/
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------
+# OS Specific Files (Optional but recommended)
+# ------------------------------------------
+.DS_Store
+Thumbs.db
