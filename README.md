@@ -1,16 +1,99 @@
-Vrit Appointment System
+# Vrit Appointment System
 
-Setup Instructions
+An appointment booking system with a Django backend and React/TypeScript frontend.
 
-Backend Setup (Django)
-1. Navigate to the salonBookingBackend directory.
-2. Create and activate a virtual environment.
-3. Install the dependencies. (assuming requirements.txt exists or standard django dependencies)
-4. Run migrations using the command: python manage.py migrate
-5. Seed the database using the command: python manage.py seed
-6. Run the server using the command: python manage.py runserver
+## Project Structure
 
-Frontend Setup (React/TypeScript)
-1. Navigate to the salonBookingApp directory.
-2. Install dependencies using npm install.
-3. Run the development server using npm run dev or npm start.
+```text
+Vrit Appointment System/
+├── salonBookingBackend/    # Django backend
+└── salonBookingApp/        # React/TypeScript frontend
+```
+
+## Setup Instructions
+
+### Backend Setup — Django
+
+```bash
+cd salonBookingBackend
+```
+
+```bash
+python -m venv venv
+```
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+```cmd
+venv\Scripts\activate
+```
+
+```bash
+python manage.py migrate
+
+```
+
+```bash
+python manage.py seed
+```
+
+```bash
+python manage.py runserver
+```
+
+The backend will be available at:
+
+```text
+http://127.0.0.1:8000/
+```
+
+---
+
+## Frontend Setup — React/TypeScript
+
+Open a **new terminal** and navigate to the frontend directory:
+
+```bash
+cd salonBookingApp
+```
+
+```bash
+npm install
+```
+
+```bash
+npm run dev
+```
+
+The frontend is running at:
+
+```text
+http://localhost:5173/
+```
+
+---
+
+## Running the Project
+
+You need to run both the backend and frontend development servers.
+
+### Terminal 1 — Backend
+
+```bash
+cd salonBookingBackend
+.\venv\Scripts\Activate.ps1
+python manage.py migrate
+python manage.py runserver
+```
+
+### Terminal 2 — Frontend
+
+```bash
+cd salonBookingApp
+npm install
+npm run dev
+```
+
+Once both servers are running, open the frontend URL shown in the terminal.
